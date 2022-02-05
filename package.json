@@ -1,0 +1,47 @@
+{
+  "name": "SampleRockPack",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "analyzer": "node scripts.build --analyzer",
+    "build": "node scripts.build --mode=production",
+    "lint": "eslint \"src/**\"",
+    "start": "node scripts.build",
+    "test": "node scripts.tests.js",
+    "test:watch": "node scripts.tests.js --watch"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint",
+    "pre-push": "npm run lint && npm test && npm run build"
+  },
+  "dependencies": {
+    "@loadable/component": "5.15.2",
+    "@reduxjs/toolkit": "1.7.2",
+    "history": "5.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-helmet": "6.1.0",
+    "react-redux": "7.2.6",
+    "react-router": "6.2.1",
+    "react-router-dom": "6.2.1",
+    "redux": "4.1.2"
+  },
+  "devDependencies": {
+    "@rockpack/codestyle": "2.0.1",
+    "@rockpack/compiler": "2.0.1",
+    "@rockpack/tester": "2.0.1",
+    "@testing-library/jest-dom": "5.16.2",
+    "@testing-library/react": "11.2.7",
+    "@testing-library/react-hooks": "7.0.2",
+    "@types/node": "16.11.22",
+    "@types/react": "17.0.8",
+    "@types/react-dom": "17.0.5",
+    "@types/webpack-env": "1.16.2",
+    "react-test-renderer": "17.0.2",
+    "simple-git-hooks": "2.7.0"
+  }
+}

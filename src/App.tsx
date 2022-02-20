@@ -2,6 +2,7 @@ import './assets/styles/global.scss';
 import { Routes, Navigate, Route } from 'react-router-dom';
 import loadable from '@loadable/component';
 import Index from './pages/Index';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = loadable(() => import('./pages/Home'));
 const Image = loadable(() => import('./pages/Image'));

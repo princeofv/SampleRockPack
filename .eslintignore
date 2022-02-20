@@ -30,6 +30,7 @@ test-reports/**
 *.hbs
 *.jade
 *.html
+*.tsx
 docs/
 public/
 locales/

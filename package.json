@@ -1,7 +1,7 @@
 {
   "name": "SampleRockPack",
   "version": "1.0.0",
-  "homepage": "https://vijay.github.io/sample-rock",
+  "homepage": "https://princeofv.github.io/SampleRockPack",
   "description": "",
   "keywords": [],
   "license": "ISC",
@@ -14,7 +14,7 @@
     "start": "node scripts.build",
     "test": "node scripts.tests.js",
     "test:watch": "node scripts.tests.js --watch",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -b master -d dist"
   },
   "simple-git-hooks": {
     "pre-commit": "npm run lint",
